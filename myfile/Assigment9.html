@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    .qs{
+        width: 100%;
+        height: auto;
+        padding: 10px 20px;
+       
+        
+    }
+    button{
+        margin-left: 10px;
+        width: 100px;
+        height: 30px; 
+        display: none;
+        border-radius: 20px;
+        
+    }
+     #ans{
+        background-color: greenyellow;
+       display: block; 
+    }
+
+    #res{
+        margin-top: 10px;
+       display: none;
+       align-items: center;
+       justify-content: center;
+       margin-left: 500px;
+       font-size: 30px;
+       font-weight: bolder;
+    }
+    #clear{
+        display: none;
+    }
+   
+   
+    </style>
+</head>
+
+<body>
+
+
+    <div id="inputs">
+        
+    </div>
+    
+    <div id="questions" class="qs">
+        <p> Q1. Write a JavaScript for loop that iterates from 0 to n. For each iteration, it checks if the current number is odd or even, and displays a message on the screen.</p>
+        <br>
+        <button id="ans" onclick="anshelp1()">Ans</button>
+        <p> Q2. Write a JavaScript function that reverses a number.</p>
+        <br>
+        <button id="ans" onclick="anshelp2()">Ans</button>
+        <p> Q3. Write a JavaScript program that takes an array of numbers and finds the largest number from the array.</p>
+        <br>
+        <button id="ans" onclick="anshelp3()">Ans</button>
+        <p> Q4. Write a JavaScript program that takes a number n from user and print the factorial of n.</p>
+        <br>
+        <button id="ans" onclick="anshelp4()">Ans</button>
+        <p> Q5. Write a JavaScript program that swap the two number.</p>
+        <br>
+        <button id="ans" onclick="anshelp5()">Ans</button>
+        <p> Q6. Write a JavaScript program to find the area of a triangle where three sides are s1, s2, s3.(Get the value of side from user)</p>
+        <br>
+        <button id="ans" onclick="anshelp6()">Ans</button>
+        <p> Q7. Write a JavaScript program to calculate multiplication and division of two numbers (input from the user).</p>
+        <br>
+        <button id="ans" onclick="anshelp7()">Ans</button>
+</div>
+<center><button onclick="q1()" id="btn-q1">Show</button>
+    <button onclick="clr()" id="clear">clear</button>
+    <button onclick="q2()" id="reverse">reverse</button>
+    <button onclick="q3()" id="Fmax">FindMax</button>
+    <button onclick="q4()" id="Fact">factorial</button>
+    <button onclick="q5()" id="swap">swap</button>
+    <button onclick="q6()" id="FindArea">Find Area</button>
+    <button onclick="q7()" id="mul">multiply</button>
+    <button onclick="q7d()" id="di">divide</button>
+</center>
+
+
+<div id="res" >
+ <pre>result: <h3 id="s"></h3> </pre> 
+</div>
+
+<div id="results">
+    
+</div>
+
+   <script src="Assigment9.js"></script>
+</body>
+</html>
